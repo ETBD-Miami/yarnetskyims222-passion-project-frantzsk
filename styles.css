@@ -1,1 +1,26 @@
+/* -- homepage background image styles -- */
 
+#index {
+    background-image: url(images/sunsetbg.JPG);
+    height: 100%; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#index .home-container {
+    max-width: 900px;
+    height: 100%;
+    padding: 0;
+    margin: 0em auto;
+}
+
+/* -- homepage center -- */
+
+.center-vertical {
+    background-color: whitesmoke;
+    margin: 3em auto 1em auto;
+    padding: 1em 1em 1em 1em;
+    border-radius: 10px;
+}
