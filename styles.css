@@ -20,7 +20,11 @@
 
 .center-vertical {
     background-color: whitesmoke;
-    margin: 3em auto 1em auto;
+    margin: 3em auto 3em auto;
     padding: 1em 1em 1em 1em;
     border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
 }
