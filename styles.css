@@ -16,6 +16,31 @@
     margin: 0em auto;
 }
 
+/* -- navigation bar -- */
+
+ul.navflex {
+    display: flex;
+    flex-direction: row;
+}
+
+ul.navflex a {
+    text-align: center;
+    border: 1px solid black;
+    padding: 0.25px;
+    background-color: green;
+    color: white;
+}
+
+ul.navflex a.active {
+    background-color: white;
+    color: green;
+}
+ul.navflex li {
+    list-style-type: none;
+    margin: 0.5em 2em;
+    flex: 1;
+}
+
 /* -- homepage center -- */
 
 .center-vertical {
@@ -27,4 +52,10 @@
 
 h1 {
     text-align: center;
+}
+
+img.home-img {
+    margin: 0;
+    width: 100%;
+    box-shadow: 4px 4px 10px #999;
 }
