@@ -18,53 +18,65 @@
 
 /* -- navigation bar -- */
 
+nav {
+    background-color: rgba(0, 0, 0, 0);
+    margin: -1em -1em 2em -1em;
+    padding: 0.75em 1em;
+}
+
 ul.navflex {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
-    margin-top: -0.5em;
-    margin: -0.4em 0 2em -5em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.navflex li {
+    list-style-type: none;
+    margin-right: 0.35em;
 }
 
 ul.navflex a {
-    text-align: center;
-    border: 1px solid black;
-    padding: 0.5em 4em 0.5em 4em;
-    background-color: black;
+    border: 1px solid rgba(0, 0, 0, 0);
     color: white;
-    font-size: 17px;
+    font-size: 1.1em;
+    background-color: rgba(0, 0, 0, 0);
+    padding:0.5em 1.5em;
+    text-decoration: none;
 }
 
 ul.navflex a.active {
     background-color: white;
     color: black;
+    padding:0.5em 1.5em;
+    border-radius: 4px;
 }
 
 ul.navflex a:hover {
-    background-color: #ddd;
+    background-color: rgb(218, 211, 211);
     color: black;
+    padding:0.5em 1.5em;
+    text-decoration: underline;
+    border-radius: 4px;
   }
-
-ul.navflex li {
-    list-style-type: none;
-    margin: 0;
-    flex: 1;
-}
 
 /* -- homepage center -- */
 
 .center-vertical {
-    background-color: whitesmoke;
-    margin: 3em auto 3em auto;
+    background-color: rgba(245, 245, 245, 0);
+    margin: 1em auto;
     padding: 1em 1em 1em 1em;
-    border-radius: 10px;
 }
 
 h1 {
     text-align: center;
+    
 }
 
 img.home-img {
     margin: 0;
     width: 100%;
-    box-shadow: 4px 4px 10px #999;
+    box-shadow: 4px 4px 10px rgb(48, 48, 48);
 }
