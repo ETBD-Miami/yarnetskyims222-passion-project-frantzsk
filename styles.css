@@ -1,7 +1,7 @@
 /* -- homepage background image styles -- */
 
 #index {
-    background-image: url(images/sunsetbg.JPG);
+    background-image: url(images/sunsetbg.jpg);
     height: 100%; 
     background-position: center center;
     background-repeat: no-repeat;
