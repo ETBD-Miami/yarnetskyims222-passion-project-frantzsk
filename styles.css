@@ -179,13 +179,13 @@ img.tiny-img {
   }
 
   .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
+    content: '\002B'; /* different character encoding "HTML entity code" */
+    font-size: 1em;
+    color: white;
     float: right;
     margin-left: 5px;
   }
   
-  .accordian.active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  .accordion.active:after {
+    content: "\2212"; /* Unicode character for "minus" sign (-) */
   }
