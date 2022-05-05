@@ -111,6 +111,7 @@ p {
 .row {
     display: flex;
     flex-direction: row;
+    margin: 0 0 1em 0;
 }
 
 img.smaller-img {
