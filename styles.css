@@ -127,9 +127,15 @@ p.verticaltext {
     padding: 0 2em 0 2em;
 }
 
+p.paragraph-intro {
+    margin: 2em auto;
+    padding: 0 2em 0 2em;
+    text-align: center;
+}
+
 img.family-img {
     margin: 0 auto;
-    width: 75%;
+    width: 90%;
     box-shadow: 4px 6px 10px rgb(48, 48, 48);
     display: block;
 }
@@ -149,7 +155,8 @@ img.tiny-img {
     text-align: center;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
+/* family page accordion */
+
 .accordion {
     background-color: #3E536E;
     color: white;
@@ -164,12 +171,10 @@ img.tiny-img {
     transition: 0.4s;
   }
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
     background-color: #627ea3;
   }
   
-  /* Style the accordion panel. Note: hidden by default */
   .panel {
     padding: 0 18px;
     background-color: #98b2d4;
@@ -180,7 +185,7 @@ img.tiny-img {
   }
 
   .accordion:after {
-    content: '\002B'; /* different character encoding "HTML entity code" */
+    content: '\002B';
     font-size: 1em;
     color: white;
     float: right;
@@ -188,5 +193,27 @@ img.tiny-img {
   }
   
   .accordion.active:after {
-    content: "\2212"; /* Unicode character for "minus" sign (-) */
+    content: "\2212";
   }
+
+  /* entertainment page css */
+
+  p.entertainment-intro {
+      text-align: center;
+      margin: -1.5em auto 1em auto;
+  }
+
+img.tiny-img {
+    margin: 0 auto;
+    width: 90%;
+    box-shadow: 4px 4px 10px rgb(48, 48, 48);
+    display: block;
+}
+
+.albumcover {
+    flex: 1;
+}
+
+.albumcover p {
+    text-align: center;
+}
