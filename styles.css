@@ -264,4 +264,12 @@ img.tiny-img {
 
 h1.album-title {
     color: black;
+    font-size: 2em;
+    margin: 3em auto;
+}
+
+p.album-description {
+    color: black;
+    font-size: 1em;
+    margin: 1em auto;
 }
