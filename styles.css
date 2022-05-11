@@ -177,11 +177,10 @@ img.tiny-img {
   
   .panel {
     padding: 0 18px;
-    background-color: #98b2d4;
+    background-color: #627ea38c;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    color: black;
   }
 
   .accordion:after {
@@ -194,6 +193,10 @@ img.tiny-img {
   
   .accordion.active:after {
     content: "\2212";
+  }
+
+  .accordion.active {
+    background-color: #627ea3;
   }
 
   /* entertainment page css */
