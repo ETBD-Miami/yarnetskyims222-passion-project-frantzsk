@@ -456,3 +456,7 @@ p.places-intro {
   text-align: center;
   margin: -1.5em auto 2.5em auto;
 }
+
+ul.movielist {
+  color: #DCEEF2;
+}
