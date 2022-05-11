@@ -10,7 +10,7 @@
 }
 
 #index .home-container {
-    max-width: 900px;
+    max-width: 960px;
     height: 100%;
     padding: 0;
     margin: 0em auto;
@@ -253,6 +253,8 @@ img.tiny-img {
 .flip-card-front {
   background-color: #bbb;
   color: black;
+  width: 100%;
+  height: 100%;
 }
 
 /* Style the back side */
@@ -272,4 +274,12 @@ p.album-description {
     color: black;
     font-size: 1em;
     margin: 1em auto;
+}
+
+.albumrow {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 1em 0;
+    flex-wrap: wrap;
+    gap: 10px;
 }
