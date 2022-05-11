@@ -283,3 +283,33 @@ p.album-description {
     flex-wrap: wrap;
     gap: 10px;
 }
+
+/* food page css */
+p.food-intro {
+    text-align: center;
+    margin: -1.5em auto 3em auto;
+}
+
+img.placeholder {
+    width: 20%;
+    box-shadow: 4px 4px 10px rgb(48, 48, 48);
+    display: block;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin: auto auto auto 2em;
+    justify-content: flex-start;
+}
+
+h2.restaurant-name {
+    flex: 1;
+    margin: 0 0;
+    padding: 0 0;
+    text-align: start;
+}
+
+p.about {
+    flex: 1;
+}
