@@ -322,7 +322,7 @@ p.about {
 
 /* travel page css */
 .slideshow-container {
-    max-width: 900px;
+    max-width: 500px;
     position: relative;
     margin: 2em auto 0 auto;
   }
@@ -369,7 +369,7 @@ p.about {
   .text {
     color: #f2f2f2;
     font-size: 15px;
-    padding: 8px 12px;
+    padding: 0;
     position: absolute;
     bottom: 18px;
     width: 100%;
