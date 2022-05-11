@@ -270,6 +270,12 @@ h1.album-title {
     margin: 3em auto;
 }
 
+h1.album-title-long {
+    color: black;
+    font-size: 2em;
+    margin: 3em .5em auto .5em;
+}
+
 p.album-description {
     color: black;
     font-size: 1em;
