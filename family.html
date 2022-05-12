@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>     
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family - Introducing Sam</title>
+    <meta name="author" content="Samantha Frantz">
+    <meta name="description" content="An introduction to Samantha's family, including photos and descriptions of each family member.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body id="index">
+<main class="home-container">
+
+<div class="center-vertical">
+    <nav>
+        <ul class="navflex">
+           <li><a href="index.html">Home</a></li>
+           <li><a class="active" href="family.html">Family</a></li>
+           <li><a href="entertainment.html">Entertainment</a></li>
+           <li><a href="food.html">Food</a></li>
+           <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav>
+
+     <h1>My Family</h1>
+
+     <img class="family-img" src="images/family.jpg" alt="A Frantz family photo in front of the Hilton Head marshes">
+
+     <p class="paragraph-intro">Where to even begin! My family is everything to me. I'm beyond grateful to come from such amazing, supportive parents and to grow up with my sister who is like a best friend to me. From dinners around the kitchen table to walks in the neighborhood, my family has always been super close. I owe a lot to them for becoming who I am today.</p>
+
+     <h2>Meet the Frantz Family</h2>
+
+     <div class="row">
+        <div class="family-photo">
+            <img class="tiny-img" src="images/Steve.jpg" alt="Samantha's dad Steve poses in front of a beach umbrella">
+            <p>Steve</p>
+            </div>
+        <div class="family-photo">
+            <img class="tiny-img" src="images/Jen.jpg" alt="Samantha's mom Jen poses on a dock in Hilton Head">
+            <p>Jen</p>
+            </div>
+        <div class="family-photo">
+            <img class="tiny-img" src="images/Syd.jpg" alt="Samantha's sister Syd poses in front of the Hilton Head marshes">
+            <p>Sydney</p>
+            </div>
+    </div>
+
+    <button class="accordion">Steve</button>
+    <div class="panel">
+    <p>My dad is goofy, handy, supportive, caring, and incredibly smart. I always go to him when I need advice, help, or just some encouragement. But one of my favorite parts about my dad is how much he believes in me. That alone is what motivates me to want to grow into the best version of myself. My dad is also generous; everything he does is for his family. He has provided me with such a wonderful life and I am so grateful.</p>
+    </div>
+
+    <button class="accordion">Jen</button>
+    <div class="panel">
+    <p>My mom is gentle, understanding, beautiful, warm, and kind. I enjoy spending time with her, even if it's just running errands to Walmart and Tim Hortons. My mom cares deeply for everyone in our family and she's extremely thoughtful. She always puts us before herself. I also can't forget to mention that she is one of the best cooks I know. My mom always lets me know how proud she is of me and it means the world.</p>
+    </div>
+
+    <button class="accordion">Sydney</button>
+    <div class="panel">
+    <p>My sister is funny, athletic, sharp, mature, and humble. She can be stubborn at times, but she's always fun to be around. Syd and I grew up doing everything with each other, and she knows me better than anyone. We always have a good laugh when we're together and share many wonderful memories. I love watching her grow into the incredible person she is. I am so proud to be her sister.</p>
+    </div>
+
+</div>
+
+</main>
+    
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
+
+</body>
+
+</html>

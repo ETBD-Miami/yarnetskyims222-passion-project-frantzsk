@@ -1,1 +1,470 @@
+/* -- background image styles -- */
 
+#index {
+    background-image: url(images/sunsetbg.jpg);
+    height: 100%; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#index .home-container {
+    max-width: 960px;
+    height: 100%;
+    padding: 0;
+    margin: 0em auto;
+}
+
+/* -- navigation bar -- */
+
+nav {
+    background-color: rgba(0, 0, 0, 0);
+    margin: -1em -1em 2em -1em;
+    padding: 0.75em 1em;
+    font-family: 'EB Garamond', serif;
+}
+
+ul.navflex {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.navflex li {
+    list-style-type: none;
+    margin-right: 0.35em;
+}
+
+ul.navflex a {
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 1.1em;
+    background-color: rgba(0, 0, 0, 0);
+    padding:0.5em 1.5em;
+    text-decoration: none;
+}
+
+ul.navflex a.active {
+    background-color: white;
+    color: black;
+    padding:0.5em 1.5em;
+    border-radius: 4px;
+}
+
+ul.navflex a:hover {
+    background-color: rgb(218, 211, 211);
+    color: black;
+    padding:0.5em 1.5em;
+    text-decoration: underline;
+    border-radius: 4px;
+  }
+
+  @media screen and (max-width: 650px) {
+    ul.navflex {
+        flex-direction: column;
+        padding: 0 20px;
+        }
+    ul.navflex li {
+      margin:10px 0;
+      }
+  }
+
+/* -- center container -- */
+
+.center-vertical {
+    background-color: rgba(245, 245, 245, 0);
+    margin: 1em auto;
+    padding: 1em 1em 1em 1em;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    font-size: 4em;
+    color: #3E536E;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    color: #DCEEF2;
+    font-weight: 450;
+    font-size: 2.5em;
+}
+
+img.home-img {
+    margin: 0;
+    width: 100%;
+    box-shadow: 4px 4px 10px rgb(48, 48, 48);
+}
+
+p {
+    font-family: 'EB Garamond', serif;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 1em 0;
+}
+
+img.smaller-img {
+    margin: 0;
+    width: 50%;
+    box-shadow: 4px 4px 10px rgb(48, 48, 48);
+    flex: 1;
+}
+
+p.verticaltext {
+    flex: 1;
+    margin: 2em auto;
+    padding: 0 2em 0 2em;
+}
+
+p.paragraph-intro {
+    margin: 2em auto;
+    padding: 0 2em 0 2em;
+    text-align: center;
+}
+
+img.family-img {
+    margin: 0 auto;
+    width: 90%;
+    box-shadow: 4px 6px 10px rgb(48, 48, 48);
+    display: block;
+}
+
+img.tiny-img {
+    margin: 0 auto;
+    width: 90%;
+    box-shadow: 4px 4px 10px rgb(48, 48, 48);
+    display: block;
+}
+
+.family-photo {
+    flex: 1;
+}
+
+.family-photo p {
+    text-align: center;
+}
+
+/* family page accordion */
+
+.accordion {
+    background-color: #3E536E;
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #627ea3;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: #627ea38c;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .accordion:after {
+    content: '\002B';
+    font-size: 1em;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .accordion.active:after {
+    content: "\2212";
+  }
+
+  .accordion.active {
+    background-color: #627ea3;
+  }
+
+  /* entertainment page css */
+
+  p.entertainment-intro {
+      text-align: center;
+      margin: -1.5em auto 1em auto;
+  }
+
+img.tiny-img {
+    margin: 0 auto;
+    width: 90%;
+    box-shadow: 4px 4px 10px rgb(48, 48, 48);
+    display: block;
+}
+
+.albumcover {
+    flex: 1;
+}
+
+.albumcover p {
+    text-align: center;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+h1.album-title {
+    color: black;
+    font-size: 2em;
+    margin: 3em auto;
+}
+
+h1.album-title-long {
+    color: black;
+    font-size: 2em;
+    margin: 3em .5em auto .5em;
+}
+
+p.album-description {
+    color: black;
+    font-size: 1em;
+    margin: 1em auto;
+}
+
+.albumrow {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 1em 0;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* food page css */
+p.food-intro {
+    text-align: center;
+    margin: -1.5em auto 3em auto;
+}
+
+img.placeholder {
+    width: 20%;
+    height: auto;
+    box-shadow: 4px 4px 10px rgb(48, 48, 48);
+    display: block;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin: auto auto auto 2em;
+    justify-content: flex-start;
+}
+
+h2.restaurant-name {
+    flex: 1;
+    margin: 0 0;
+    padding: 0 0;
+    text-align: start;
+}
+
+p.about {
+    flex: 1;
+    font-size: 1.5em;
+    margin: -0.1em 0 0 0;
+    color: #DCEEF2;
+}
+
+p.food {
+  flex: 1;
+}
+
+
+/* travel page css */
+.slideshow-container {
+    max-width: 700px;
+    position: relative;
+    margin: 2em auto 0 auto;
+  }
+
+/* slideshow css */
+.mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Position the "prev button" to the left */
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.548);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 0;
+    position: absolute;
+    bottom: 18px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 0 1em 0;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: 1}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: 1}
+    to {opacity: 1}
+  }
+
+  h2.travel {
+    margin: -.25em auto 1em auto;
+  }
+
+  .place {
+    flex: 1;
+  }
+
+  .place p {
+    text-align: center;
+  }
+
+  iframe.map {
+    flex: 1;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    box-shadow: 4px 4px 10px rgb(48, 48, 48);
+    display: block;
+  }
+
+  .place-row {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 1em 0;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+p.places-intro {
+  text-align: center;
+  margin: -1.5em auto 2.5em auto;
+}
+
+ul.movielist {
+  color: #DCEEF2;
+}
