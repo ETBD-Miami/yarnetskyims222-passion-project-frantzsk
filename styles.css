@@ -322,7 +322,15 @@ h2.restaurant-name {
 
 p.about {
     flex: 1;
+    font-size: 1.5em;
+    margin: -0.1em 0 0 0;
+    color: #DCEEF2;
 }
+
+p.food {
+  flex: 1;
+}
+
 
 /* travel page css */
 .slideshow-container {
